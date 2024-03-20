@@ -70,7 +70,7 @@ public class droneControl : UnitController
         var qAbl = (float)outputArr[1];
         var qAfl = (float)outputArr[2];
 
-        print(qAbl+ "      "+qAbr+"       "+qAfl);
+        //print(qAbl+ "      "+qAbr+"       "+qAfl);
 
         //outputs
         

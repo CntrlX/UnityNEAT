@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
     <Config>
-      <PopulationSize>50</PopulationSize>
+      <PopulationSize>150</PopulationSize>
       <SpecieCount>15</SpecieCount>
       <Activation>
-        <Scheme>Acyclic</Scheme>
+        <Scheme>CyclicRelax</Scheme>
+	<Threshold>500</Threshold>
+	<MaxIters>100</MaxIters>
       </Activation>
       <ComplexityRegulationStrategy>Absolute</ComplexityRegulationStrategy>
-      <ComplexityThreshold>30</ComplexityThreshold>
+      <ComplexityThreshold>10000</ComplexityThreshold>
       <Description>Logical XOR. The goal is to reproduce the following logic truth table:
         In1 | In2 | Out
         -----------------
