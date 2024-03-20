@@ -118,18 +118,12 @@ public class droneControl : UnitController
                 checkpoints++;
             }
         }
+ 
+
 
         }
         
-    public override float GetFitness()
-    {
-        if(points>=0){
-            return points;
-        }else{
-            return 0;
-        }
-    }
-    }
+       }
    
 
 
@@ -142,6 +136,15 @@ public class droneControl : UnitController
     {
         this.box = box;
         this.IsRunning = true;
+    }
+
+public override float GetFitness()
+    {
+        if(points>=0){
+            return points;
+        }else{
+            return 0;
+        }
     }
 
 }
