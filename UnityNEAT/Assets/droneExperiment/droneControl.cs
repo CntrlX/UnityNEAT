@@ -121,6 +121,14 @@ public class droneControl : UnitController
 
         }
         
+    public override float GetFitness()
+    {
+        if(points>=0){
+            return points;
+        }else{
+            return 0;
+        }
+    }
     }
    
 
@@ -136,14 +144,6 @@ public class droneControl : UnitController
         this.IsRunning = true;
     }
 
-    public override float GetFitness()
-    {
-        if(points>=0){
-            return points;
-        }else{
-            return 0;
-        }
-    }
 }
 
 
