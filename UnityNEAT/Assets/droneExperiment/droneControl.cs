@@ -95,7 +95,7 @@ public class droneControl : UnitController
         // }
 
         if(position.y > 60){
-            points+=100;   
+            points-=100;        
         }
         if(position.y >= 10&& position.y <=60){
             points+=100;   
